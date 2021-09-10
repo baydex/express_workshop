@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baydex/express_workshop.git"
   },
   "keywords": [
     "api",
@@ -15,6 +20,11 @@
   "author": "Ale",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "bugs": {
+    "url": "https://github.com/baydex/express_workshop/issues"
+  },
+  "homepage": "https://github.com/baydex/express_workshop$readme"
 }
