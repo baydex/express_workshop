@@ -6,6 +6,7 @@ const morgan = require('morgan')
 //routes
 const pokemon = require("./routes/pokemon")
 const user = require("./routes/user")
+const form = require("./routes/form")
 
 //middleware
 const auth = require("./middleware/auth")
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", index)
 app.use("/user", user)
+app.use("/form", form)
 app.use(auth)
 app.use("/pokemon", pokemon)
 app.use(notFound)
